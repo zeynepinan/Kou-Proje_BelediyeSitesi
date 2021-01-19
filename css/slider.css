@@ -1,0 +1,363 @@
+ 
+#wowslider-container1{
+	
+  position: relative;
+  width:1000px;
+  height:500px;
+  overflow: hidden;}
+  .resim1, .resim2, .resim3, .resim4,.resim5{
+  position: absolute;
+  width:1000px;
+  height:500px;
+}
+.resim1{left: 0px;}
+.resim2{left: 1000px;}
+.resim3{left: 2000px;}
+.resim4{left: 3000px;}
+.resim5{left: 4000px;}
+#wowslider-container1 > .ws_images{
+  position: relative;
+  left:0px;
+  width: 4000px;
+  height: 500px;
+  -webkit-animation-duration: 20s;
+  -webkit-animation-name: sliderss;
+  -webkit-animation-iteration-count:infinite;
+  -moz-animation-duration: 20s;
+  -moz-animation-name: sliderss;
+  -moz-animation-iteration-count:infinite;
+  -ms-animation-duration: 20s;
+  -ms-animation-name: sliderss;
+  -ms-animation-iteration-count:infinite;
+  animation-duration: 20s;
+  animation-iteration-count:infinite;
+ 
+}
+#wowslider-container1 > .ws_images:hover{
+-webkit-animation-play-state:paused;
+}
+#wowslider-container1 > .ws_images> a > title{
+  position:absolute;
+  background:white;
+  color:black;
+  left:0;
+  top:85%;
+  padding:8px 22px;
+  display:table;
+   opacity: 0.8;
+}
+#wowslider-container1 a{
+   font-size:18px;
+   font-family:Arial;
+}
+
+ @-webkit-keyframes sliderss{
+       0% {left:0px;}
+      10% {left:0px;}
+      20% {left:-1000px;}
+      30% {left:-1000px;}
+      40% {left:-2000px;}
+      50% {left:-2000px;}
+	   60% {left:-3000px;}
+      70% {left:-3000px;}
+      80% {left:-4000px;}
+      90% {left:-4000px;}
+    }
+    @-moz-keyframes sliderss{
+         0% {left:0px;}
+      10% {left:0px;}
+      20% {left:-1000px;}
+      30% {left:-1000px;}
+      40% {left:-2000px;}
+      50% {left:-2000px;}
+	   60% {left:-3000px;}
+      70% {left:-3000px;}
+      80% {left:-4000px;}
+      90% {left:-4000px;}
+    }
+    @-ms-keyframes sliderss {
+        0% {left:0px;}
+      10% {left:0px;}
+      20% {left:-1000px;}
+      30% {left:-1000px;}
+      40% {left:-2000px;}
+      50% {left:-2000px;}
+	   60% {left:-3000px;}
+      70% {left:-3000px;}
+      80% {left:-4000px;}
+      90% {left:-4000px;}
+    }
+    @keyframes sliderss{
+        0% {left:0px;}
+      10% {left:0px;}
+      20% {left:-1000px;}
+      30% {left:-1000px;}
+      40% {left:-2000px;}
+      50% {left:-2000px;}
+	   60% {left:-3000px;}
+      70% {left:-3000px;}
+      80% {left:-4000px;}
+      90% {left:-4000px;}
+     
+    }
+ 
+#slider2{
+	margin-right:350px;
+	margin-top:-175px;
+  position: relative;
+  width:643px;
+  height:270px;
+  overflow: hidden;}
+  .img1, .img2, .img3, .img4,.img5,.img6, .img7, .img8, .img9,.img10,.img11, .img12, .img13, .img14,.img15,.img16{
+  position: absolute;
+  width:643px;
+  height:270px;
+}
+.img1{left: 0px;}
+.img2{left: 643px;}
+.img3{left: 1286px;}
+.img4{left: 1929px;}
+.img5{left: 2572px;}
+.img6{left: 3215px;}
+.img7{left: 3858px;}
+.img8{left: 4501px;}
+.img9{left: 5144px;}
+.img10{left: 5787px;}
+.img11{left: 6430px;}
+.img12{left: 7073px;}
+.img13{left: 7716px;}
+.img14{left: 8359px;}
+.img15{left: 9002px;}
+.img16{left: 9645px;}
+#slider2 > .images{
+  position: relative;
+  left:0px;
+  width: 9645px;
+  height: 270px;
+  -webkit-animation-duration: 100s;
+  -webkit-animation-name: sliders;
+  -webkit-animation-iteration-count:infinite;
+  -moz-animation-duration: 100s;
+  -moz-animation-name: sliders;
+  -moz-animation-iteration-count:infinite;
+  -ms-animation-duration: 100s;
+  -ms-animation-name: sliders;
+  -ms-animation-iteration-count:infinite;
+  animation-duration: 100s;
+  animation-iteration-count:infinite;
+ 
+}
+#slider2 > .images:hover{
+-webkit-animation-play-state:paused;
+}
+
+
+ @-webkit-keyframes sliders{
+      0% {left:0px;}
+      3% {left:0px;}
+      6% {left:-643px;}
+      9% {left:-643px;}
+      12% {left:-1286px;}
+      15% {left:-1286px;}
+	  18% {left:-1929px;}
+      21% {left:-1929px;}
+      24% {left:-2572px;}
+      27% {left:-2572px;} 
+      30% {left:-3215px;}
+      33% {left:-3215px;}
+      36% {left:-3858px;}
+      39% {left:-3858px;}
+      42% {left:-4501px;}
+	  45% {left:-4501px;}
+      48% {left:-5144px;}
+      51% {left:-5144px;}
+      54% {left:-5787px;}
+	  57% {left:-5787px;}
+      60% {left:-6430px;}
+      63% {left:-6430px;}
+      66% {left:-7073px;}
+      69% {left:-7073px;}
+      72% {left:-7716px;}
+	  75% {left:-7716px;}
+      78% {left:-8359px;}
+      81% {left:-8359px;}
+      84% {left:-9002px;}
+	  87% {left:-9002px;}
+      90% {left:-9645px;}
+	  93% {left:-9645px;}
+    }
+    @-moz-keyframes sliders{
+  0% {left:0px;}
+      3% {left:0px;}
+      6% {left:-643px;}
+      9% {left:-643px;}
+      12% {left:-1286px;}
+      15% {left:-1286px;}
+	  18% {left:-1929px;}
+      21% {left:-1929px;}
+      24% {left:-2572px;}
+      27% {left:-2572px;} 
+      30% {left:-3215px;}
+      33% {left:-3215px;}
+      36% {left:-3858px;}
+      39% {left:-3858px;}
+      42% {left:-4501px;}
+	  45% {left:-4501px;}
+      48% {left:-5144px;}
+      51% {left:-5144px;}
+      54% {left:-5787px;}
+	  57% {left:-5787px;}
+      60% {left:-6430px;}
+      63% {left:-6430px;}
+      66% {left:-7073px;}
+      69% {left:-7073px;}
+      72% {left:-7716px;}
+	  75% {left:-7716px;}
+      78% {left:-8359px;}
+      81% {left:-8359px;}
+      84% {left:-9002px;}
+	  87% {left:-9002px;}
+      90% {left:-9645px;}
+	  93% {left:-9645px;}
+    }
+    @-ms-keyframes sliders{
+        0% {left:0px;}
+      3% {left:0px;}
+      6% {left:-643px;}
+      9% {left:-643px;}
+      12% {left:-1286px;}
+      15% {left:-1286px;}
+	  18% {left:-1929px;}
+      21% {left:-1929px;}
+      24% {left:-2572px;}
+      27% {left:-2572px;} 
+      30% {left:-3215px;}
+      33% {left:-3215px;}
+      36% {left:-3858px;}
+      39% {left:-3858px;}
+      42% {left:-4501px;}
+	  45% {left:-4501px;}
+      48% {left:-5144px;}
+      51% {left:-5144px;}
+      54% {left:-5787px;}
+	  57% {left:-5787px;}
+      60% {left:-6430px;}
+      63% {left:-6430px;}
+      66% {left:-7073px;}
+      69% {left:-7073px;}
+      72% {left:-7716px;}
+	  75% {left:-7716px;}
+      78% {left:-8359px;}
+      81% {left:-8359px;}
+      84% {left:-9002px;}
+	  87% {left:-9002px;}
+      90% {left:-9645px;}
+	  93% {left:-9645px;}
+    }
+    @keyframes sliders{
+      0% {left:0px;}
+      3% {left:0px;}
+      6% {left:-643px;}
+      9% {left:-643px;}
+      12% {left:-1286px;}
+      15% {left:-1286px;}
+	  18% {left:-1929px;}
+      21% {left:-1929px;}
+      24% {left:-2572px;}
+      27% {left:-2572px;} 
+      30% {left:-3215px;}
+      33% {left:-3215px;}
+      36% {left:-3858px;}
+      39% {left:-3858px;}
+      42% {left:-4501px;}
+	  45% {left:-4501px;}
+      48% {left:-5144px;}
+      51% {left:-5144px;}
+      54% {left:-5787px;}
+	  57% {left:-5787px;}
+      60% {left:-6430px;}
+      63% {left:-6430px;}
+      66% {left:-7073px;}
+      69% {left:-7073px;}
+      72% {left:-7716px;}
+	  75% {left:-7716px;}
+      78% {left:-8359px;}
+      81% {left:-8359px;}
+      84% {left:-9002px;}
+	  87% {left:-9002px;}
+      90% {left:-9645px;}
+	  93% {left:-9645px;}
+    }
+	
+@charset "utf-8";
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.slider {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color:#666;
+  font-size: 20px;
+  padding: 15px 30px;
+  position: absolute;
+  bottom: 8px;
+  text-align: center;
+  margin-left:30px;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}/* CSS Document */
+

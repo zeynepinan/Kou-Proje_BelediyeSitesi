@@ -1,0 +1,629 @@
+
+/* ================= FONT FACE  ================== */	
+
+@font-face{ 
+	font-family: 'WebSymbolsRegular';
+	src: url('../fonts/websymbols-regular-webfont.eot');
+	src: url('../fonts/websymbols-regular-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('../fonts/websymbols-regular-webfont.woff') format('woff'),
+	     url('../fonts/websymbols-regular-webfont.ttf') format('truetype'),
+	     url('../fonts/websymbols-regular-webfont.svg#WebSymbolsRegular') format('svg');
+}
+
+/* ---------- Nav ----------- */
+
+.nav ul,
+.nav ul li {
+	padding:0;
+	margin:0;
+	list-style:none;
+} 
+
+.nav .clear {
+	clear:both;
+} 
+
+.nav {
+	width:100%;
+	position:relative;
+	-moz-border-radius:8px;
+	-webkit-border-radius:8px;
+	border-radius:8px;
+} 
+
+.nav ul {
+	float:left;
+	position:relative;
+} 
+
+.nav > ul > li {
+	float:left;
+	line-height:3em;
+	padding:0 1.3em;
+	position:relative;
+}
+
+.nav > ul > li:hover:first-child {
+	-moz-border-radius:8px 0 0 8px;
+	-webkit-border-radius:8px 0 0 8px;
+	border-radius:8px 0 0 8px;
+} 
+
+/* ----- Border Last Round item ------ */
+
+/*.nav > ul > li:hover:last-child {
+	-moz-border-radius:0 8px 8px 0;
+	-webkit-border-radius:0 8px 8px 0;
+	border-radius:0 8px 8px 0;
+} */
+
+.nav ul li ul li:hover {
+	background-color:#fff;
+} 
+
+.nav > ul > li a {
+	font-family:Arial, Helvetica, sans-serif;
+	text-transform:uppercase;
+	color:#fff;
+	font-weight:700;
+	display:block;
+	text-shadow:0 1px 0 rgba(0,0,0,0.5);
+	text-decoration:none;
+	font-size:12px;
+}
+
+.nav ul li ul > li > a {
+	color:#363636;
+	text-transform:none;
+	text-shadow:none;
+}
+
+.nav li a.drop:after {
+	font-family: 'WebSymbolsRegular';
+    content:"[";
+	overflow:hidden;
+	position:absolute;
+	right:7px;
+	top:0;
+}
+
+/* 2-Levels Drop Down */
+
+.nav .levels,
+.nav .levels ul {
+    list-style: none outside none;
+    margin: 0;
+	left: -999em;
+	background:#e6e6e6;
+    position: absolute;
+}
+
+.nav .levels a {
+	display: block;
+	width:9.6em;
+}
+
+.nav .levels li:first-child {border-top:none;} 
+
+.nav .levels li {
+	border-top:1px solid #fff;
+	width:9.6em;
+	float:left;
+	position:relative;
+}
+
+.nav .levels li > a {
+	display:block;
+	line-height:3em;
+	padding:0 1.3em;
+}
+
+.nav .levels li ul {
+	position: absolute;
+	top:0;
+	left: -999em;
+}
+
+/* ----- Hover ---- */ 
+
+.nav li:hover ul.levels,
+.nav .levels li:hover ul,
+.nav .levels li ul li:hover ul {
+	-moz-box-shadow:0 3px 3px rgba(0,0,0,0.2);
+	-webkit-box-shadow:0 3px 3px rgba(0,0,0,0.2);
+	box-shadow:0 3px 3px rgba(0,0,0,0.2);
+	border-left:1px solid #515151;
+	border-right:1px solid #515151;
+	border-bottom:1px solid #515151;
+	top:3em;
+	left:0;
+	display:block;
+}
+
+.nav .levels li:hover ul {
+	z-index:5;
+} 
+
+.nav .levels li:hover ul,
+.nav .levels li ul li:hover ul {
+	top:0;
+	display:block;
+}
+
+.nav li:hover .levels li:hover {
+	-moz-transition:all 200ms linear 0s;
+	-webkit-transition:all 200ms linear 0s;
+	-o-transition:all 200ms linear 0s;
+	-ms-transition:all 200ms linear 0s;
+	background:#fff;
+}
+
+.nav li:hover li a:hover {
+	-moz-transition:all 200ms linear 0s;
+	-webkit-transition:all 200ms linear 0s;
+	-o-transition:all 200ms linear 0s;
+	-ms-transition:all 200ms linear 0s;
+}
+
+.nav .levels li:hover ul,
+.nav .levels li ul li:hover ul{
+	left: 9.3em;
+	*left: 9.6em;
+	display:block;
+}
+
+.nav .levels li:hover ul ul {
+	left: -999em;
+}
+
+/* ----- Search Top ---- */ 
+
+.search-top {
+	padding:.6em .6em 0 0;
+	position:relative;
+	float:right;
+} 
+
+.inline-search input[type="text"] {
+	background:#f1f1f1;
+	border:none;
+	width:160px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	-moz-box-shadow:inset 0 1px 2px 1px rgba(0,0,0,0.2);
+	-webkit-box-shadow:inset 0 1px 2px 1px rgba(0,0,0,0.2);
+	box-shadow:inset 0 1px 2px 1px rgba(0,0,0,0.2);
+	line-height:1.5em;
+	padding:6px 10px;
+}
+
+.inline-search input[type="submit"] {
+	font-family: 'WebSymbolsRegular';
+	background:none;
+	border:none;
+	position:absolute;
+	top:14px;
+	overflow:hidden;
+	width:18px;
+	height:18px;
+	font-size:16px;
+	right:15px;
+	cursor:pointer !important;
+} 
+
+.inline-search input[type="submit"]:hover {
+	cursor:pointer;
+}
+
+/* ========= COLORS ========= */
+
+/* BLUE */
+
+.blue-menu.nav  ul li:hover {
+	background-color: #1eb6ff;
+	background: -ms-linear-gradient(top, #1eb6ff, #0b88ff); /* IE9 */
+	background: -moz-linear-gradient(top, #1eb6ff, #0b88ff); /* Firefox */
+	background: -o-linear-gradient(top, #1eb6ff, #0b88ff); /* Opera 11  */
+	background: -webkit-linear-gradient(top, #1eb6ff, #0b88ff); /* Chrome 11  */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #1eb6ff), color-stop(1, #0b88ff)); /* Chrome 10, Safari */
+}
+.blue-menu.nav li:hover ul.levels,
+.blue-menu.nav .levels li:hover ul,
+.blue-menu.nav .levels li ul li:hover ul {border-top:4px solid #0b88ff;}
+.blue-menu.nav .inline-search input[type="submit"] {color:#165080;} 
+.blue-menu.nav li:hover li a:hover {color:#029feb;}
+.blue-menu.nav {
+	border:1px solid #003071;
+	-moz-box-shadow:inset 0 1px 0 rgba(122,180,218,1);
+	-webkit-box-shadow:inset 0 1px 0 rgba(122,180,218,1);
+	box-shadow:inset 0 1px 0 rgba(122,180,218,1);
+	background: -ms-linear-gradient(top, #1072b9, #0a497f); /* IE9 */
+	background: -moz-linear-gradient(top, #1072b9, #0a497f); /* Firefox */
+	background: -o-linear-gradient(top, #1072b9, #0a497f); /* Opera 11  */
+	background: -webkit-linear-gradient(top, #1072b9, #0a497f); /* Chrome 11  */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #1072b9), color-stop(1, #0a497f)); /* Chrome 10 */
+} 
+
+/* LIGHT BLUE */
+
+.light-blue-menu.nav  ul li:hover {
+	background-color: #5fc0ce;
+	background: -ms-linear-gradient(top, #5fc0ce, #36bbce); /* IE9 */
+	background: -moz-linear-gradient(top, #5fc0ce, #36bbce); /* Firefox */
+	background: -o-linear-gradient(top, #5fc0ce, #36bbce); /* Opera 11  */
+	background: -webkit-linear-gradient(top, #5fc0ce, #36bbce); /* Chrome 11  */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #5fc0ce), color-stop(1, #36bbce)); /* Chrome 10, Safari */
+}
+.light-blue-menu.nav li:hover ul.levels,
+.light-blue-menu.nav .levels li:hover ul,
+.light-blue-menu.nav .levels li ul li:hover ul {border-top:4px solid #36bbce;}
+.light-blue-menu.nav .inline-search input[type="submit"] {color:#015965;} 
+.light-blue-menu.nav li:hover li a:hover {color:#36bbce;}
+.light-blue-menu.nav {
+	border:1px solid #015965;
+	-moz-box-shadow:inset 0 1px 0 rgba(95,192,206,1);
+	-webkit-box-shadow:inset 0 1px 0 rgba(95,192,206,1);
+	box-shadow:inset 0 1px 0 rgba(95,192,206,1);
+	background: -ms-linear-gradient(top, #03899c, #015965); /* IE9 */
+	background: -moz-linear-gradient(top, #03899c, #015965); /* Firefox */
+	background: -o-linear-gradient(top, #03899c, #015965); /* Opera 11  */
+	background: -webkit-linear-gradient(top, #03899c, #015965); /* Chrome 11  */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #03899c), color-stop(1, #015965)); /* Chrome 10 */
+}
+
+/* DARK BLUE */
+
+.dark-blue-menu.nav  ul li:hover {
+	background-color: #454b84;
+	background: -ms-linear-gradient(top, #454b84, #3a4184); /* IE9 */
+	background: -moz-linear-gradient(top, #454b84, #3a4184); /* Firefox */
+	background: -o-linear-gradient(top, #454b84, #3a4184); /* Opera 11  */
+	background: -webkit-linear-gradient(top, #454b84, #3a4184); /* Chrome 11  */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #454b84), color-stop(1, #3a4184)); /* Chrome 10, Safari */
+}
+.dark-blue-menu.nav li:hover ul.levels,
+.dark-blue-menu.nav .levels li:hover ul,
+.dark-blue-menu.nav .levels li ul li:hover ul {border-top:4px solid #3a4184;}
+.dark-blue-menu.nav .inline-search input[type="submit"] {color:#040726;} 
+.dark-blue-menu.nav li:hover li a:hover {color:#3a4184;}
+.dark-blue-menu.nav {
+	border:1px solid #040726;
+	-moz-box-shadow:inset 0 1px 0 rgba(69,75,132,1);
+	-webkit-box-shadow:inset 0 1px 0 rgba(69,75,132,1);
+	box-shadow:inset 0 1px 0 rgba(69,75,132,1);
+	background: -ms-linear-gradient(top, #181d4a, #040726); /* IE9 */
+	background: -moz-linear-gradient(top, #181d4a, #040726); /* Firefox */
+	background: -o-linear-gradient(top, #181d4a, #040726); /* Opera 11  */
+	background: -webkit-linear-gradient(top, #181d4a, #040726); /* Chrome 11  */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #181d4a), color-stop(1, #040726)); /* Chrome 10 */
+}
+
+/* GREEN */
+
+.green-menu.nav  ul li:hover {
+	background-color: #8ac194;
+	background: -ms-linear-gradient(top, #8ac194, #77c184); /* IE9 */
+	background: -moz-linear-gradient(top, #8ac194, #77c184); /* Firefox */
+	background: -o-linear-gradient(top, #8ac193, #77c184); /* Opera 11  */
+	background: -webkit-linear-gradient(top, #8ac194, #77c184); /* Chrome 11  */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #8ac194), color-stop(1, #77c184)); /* Chrome 10, Safari */
+}
+.green-menu.nav li:hover ul.levels,
+.green-menu.nav .levels li:hover ul,
+.green-menu.nav .levels li ul li:hover ul {border-top:4px solid #77c184;}
+.green-menu.nav .inline-search input[type="submit"] {color:#155620} 
+.green-menu.nav li:hover li a:hover {color:#77c184;}
+.green-menu.nav {
+	border:1px solid #155620;
+	-moz-box-shadow:inset 0 1px 0 rgba(138,193,148,1);
+	-webkit-box-shadow:inset 0 1px 0 rgba(138,193,148,1);
+	box-shadow:inset 0 1px 0 rgba(138,193,148,1);
+	background: -ms-linear-gradient(top, #40844c, #155620); /* IE9 */
+	background: -moz-linear-gradient(top, #40844c, #155620); /* Firefox */
+	background: -o-linear-gradient(top, #40844c, #155620); /* Opera 11  */
+	background: -webkit-linear-gradient(top, #40844c, #155620); /* Chrome 11  */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(1, #40844c), color-stop(1, #155620)); /* Chrome 10 */
+} 
+
+/* DARK GREEN */
+
+.dark-green-menu.nav  ul li:hover {
+	background-color: #437343;
+	background: -ms-linear-gradient(top, #437343, #3d733d); /* IE9 */
+	background: -moz-linear-gradient(top, #437343, #3d733d); /* Firefox */
+	background: -o-linear-gradient(top, #437343, #3d733d); /* Opera 11  */
+	background: -webkit-linear-gradient(top, #437343, #3d733d); /* Chrome 11  */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #437343), color-stop(1, #3d733d)); /* Chrome 10, Safari */
+}
+.dark-green-menu.nav li:hover ul.levels,
+.dark-green-menu.nav .levels li:hover ul,
+.dark-green-menu.nav .levels li ul li:hover ul {border-top:4px solid #3d733d;}
+.dark-green-menu.nav .inline-search input[type="submit"] {color:#0e320e} 
+.dark-green-menu.nav li:hover li a:hover {color:#3d733d;}
+.dark-green-menu.nav {
+	border:1px solid #0e320e;
+	-moz-box-shadow:inset 0 1px 0 rgba(67,115,67,1);
+	-webkit-box-shadow:inset 0 1px 0 rgba(67,115,67,1);
+	box-shadow:inset 0 1px 0 rgba(67,115,67,1);
+	background: -ms-linear-gradient(top, #214621, #0e320e); /* IE9 */
+	background: -moz-linear-gradient(top, #214621, #0e320e); /* Firefox */
+	background: -o-linear-gradient(top, #214621, #0e320e); /* Opera 11  */
+	background: -webkit-linear-gradient(top, #214621, #0e320e); /* Chrome 11  */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(1, #214621), color-stop(1, #0e320e)); /* Chrome 10 */
+} 
+
+/* GREY GREEN  */
+
+.grey-green-menu.nav  ul li:hover {
+	background-color: #4f5956;
+	background: -ms-linear-gradient(top, #4f5956, #4f5956); /* IE9 */
+	background: -moz-linear-gradient(top, #4f5956, #4f5955); /* Firefox */
+	background: -o-linear-gradient(top, #4f5956, #4f5955); /* Opera 11  */
+	background: -webkit-linear-gradient(top, #4f5956, #4f5955); /* Chrome 11  */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #4f5956), color-stop(1, #4f5955)); /* Chrome 10, Safari */
+}
+.grey-green-menu.nav li:hover ul.levels,
+.grey-green-menu.nav .levels li:hover ul,
+.grey-green-menu.nav .levels li ul li:hover ul {border-top:4px solid #4f5956;}
+.grey-green-menu.nav .inline-search input[type="submit"] {color:#173028} 
+.grey-green-menu.nav li:hover li a:hover {color:#4f5956;}
+.grey-green-menu.nav {
+	border:1px solid #173028;
+	-moz-box-shadow:inset 0 1px 0 rgba(79,89,86,1);
+	-webkit-box-shadow:inset 0 1px 0 rgba(79,89,86,1);
+	box-shadow:inset 0 1px 0 rgba(79,89,86,1);
+	background: -ms-linear-gradient(top, #3e4744, #173028); /* IE9 */
+	background: -moz-linear-gradient(top, #3e4744, #173028); /* Firefox */
+	background: -o-linear-gradient(top, #3e4744, #173028); /* Opera 11  */
+	background: -webkit-linear-gradient(top, #3e4744, #173028); /* Chrome 11  */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(1, #3e4744), color-stop(1, #173028)); /* Chrome 10 */
+} 
+
+/* GREY */
+
+.grey-menu.nav  ul li:hover {
+	background-color: #FFEE00;
+	background: -ms-linear-gradient(top, #959595, #7c7c7c); /* IE9 */
+	background: -moz-linear-gradient(top, #959595, #7c7c7c); /* Firefox */
+	background: -o-linear-gradient(top, #959595, #7c7c7c); /* Opera 11  */
+	background: -webkit-linear-gradient(top, #959595, #7c7c7c); /* Chrome 11  */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #959595), color-stop(1, #7c7c7c)); /* Chrome 10 */
+}
+.grey-menu.nav li:hover ul.levels,
+.grey-menu.nav .levels li:hover ul,
+.grey-menu.nav .levels li ul li:hover ul {border-top:4px solid #7c7c7c;}
+.grey-menu.nav .inline-search input[type="submit"] {color:#646464} 
+.grey-menu.nav li:hover li a:hover {color:#7c7c7c;}
+.grey-menu.nav {
+	border:1px solid #646464;
+	-moz-box-shadow:inset 0 1px 0 rgba(149,149,149,1);
+	-webkit-box-shadow:inset 0 1px 0 rgba(149,149,149,1);
+	box-shadow:inset 0 1px 0 rgba(149,149,149,1);
+	background: -ms-linear-gradient(top, #646464, #7e7e7e); /* IE9 */
+	background: -moz-linear-gradient(top, #646464, #7e7e7e); /* Firefox */
+	background: -o-linear-gradient(top, #646464, #7e7e7e); /* Opera 11  */
+	background: -webkit-linear-gradient(top, #646464, #7e7e7e); /* Chrome 11  */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #646464), color-stop(1, #7e7e7e)); /* Chrome 10 */
+}
+
+/* BLACK  */
+
+.black-menu.nav  ul li:hover {
+	background-color: #424242;
+	background: -ms-linear-gradient(top, #424242, #727272); /* IE9 */
+	background: -moz-linear-gradient(top, #424242, #727272); /* Firefox */
+	background: -o-linear-gradient(top, #424242, #727272); /* Opera 11  */
+	background: -webkit-linear-gradient(top, #424242, #727272); /* Chrome 11  */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #424242), color-stop(1, #727272)); /* Chrome 10, Safari */
+}
+.black-menu.nav li:hover ul.levels,
+.black-menu.nav .levels li:hover ul,
+.black-menu.nav .levels li ul li:hover ul {border-top:4px solid #727272;}
+.black-menu.nav .inline-search input[type="submit"] {color:#262626} 
+.black-menu.nav li:hover li a:hover {color:#727272;}
+.black-menu.nav {
+	border:1px solid #262626;
+	-moz-box-shadow:inset 0 1px 0 rgba(66,66,66,1);
+	-webkit-box-shadow:inset 0 1px 0 rgba(66,66,66,1);
+	box-shadow:inset 0 1px 0 rgba(66,66,66,1);
+	background: -ms-linear-gradient(top, #393939, #262626); /* IE9 */
+	background: -moz-linear-gradient(top, #393939, #262626); /* Firefox */
+	background: -o-linear-gradient(top, #393939, #262626); /* Opera 11  */
+	background: -webkit-linear-gradient(top, #393939, #262626); /* Chrome 11  */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(1, #393939), color-stop(1, #262626)); /* Chrome 10 */
+} 
+
+/* LIGHT VIOLET */
+
+.light-violet-menu.nav  ul li:hover {
+	background-color: #d7b2d8;
+	background: -ms-linear-gradient(top, #d7b2d8, #d6a0d8); /* IE9 */
+	background: -moz-linear-gradient(top, #d7b2d8, #d6a0d8); /* Firefox */
+	background: -o-linear-gradient(top, #d7b2d8, #d6a0d8); /* Opera 11  */
+	background: -webkit-linear-gradient(top, #d7b2d8, #d6a0d8); /* Chrome 11  */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #d7b2d8), color-stop(1, #d6a0d8)); /* Chrome 10, Safari */
+}
+.light-violet-menu.nav li:hover ul.levels,
+.light-violet-menu.nav .levels li:hover ul,
+.light-violet-menu.nav .levels li ul li:hover ul {border-top:4px solid #d6a0d8;}
+.light-violet-menu.nav .inline-search input[type="submit"] {color:#89458c} 
+.light-violet-menu.nav li:hover li a:hover {color:#d6a0d8;}
+.light-violet-menu.nav {
+	border:1px solid #89458c;
+	-moz-box-shadow:inset 0 1px 0 rgba(215,178,216,1);
+	-webkit-box-shadow:inset 0 1px 0 rgba(215,178,216,1);
+	box-shadow:inset 0 1px 0 rgba(215,178,216,1);
+	background: -ms-linear-gradient(top, #a46aa6, #89458c); /* IE9 */
+	background: -moz-linear-gradient(top, #a46aa6, #89458c); /* Firefox */
+	background: -o-linear-gradient(top, #a46aa6, #89458c); /* Opera 11  */
+	background: -webkit-linear-gradient(top, #a46aa6, #89458c); /* Chrome 11  */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #a46aa6), color-stop(1, #89458c)); /* Chrome 10 */
+}  
+
+/* VIOLET */
+
+.violet-menu.nav  ul li:hover {
+	background-color: #C062D3;
+	background: -ms-linear-gradient(top, #C062D3, #B939D3); /* IE9 */
+	background: -moz-linear-gradient(top, #C062D3, #B939D3); /* Firefox */
+	background: -o-linear-gradient(top, #C062D3, #B939D3); /* Opera 11  */
+	background: -webkit-linear-gradient(top, #C062D3, #B939D3); /* Chrome 11  */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #C062D3), color-stop(1, #B939D3)); /* Chrome 10, Safari */
+}
+.violet-menu.nav li:hover ul.levels,
+.violet-menu.nav .levels li:hover ul,
+.violet-menu.nav .levels li ul li:hover ul {border-top:4px solid #B939D3;}
+.violet-menu.nav .inline-search input[type="submit"] {color:#5A016D} 
+.violet-menu.nav li:hover li a:hover {color:#B939D3;}
+.violet-menu.nav {
+	border:1px solid #5A016D;
+	-moz-box-shadow:inset 0 1px 0 rgba(192,98,211,1);
+	-webkit-box-shadow:inset 0 1px 0 rgba(192,98,211,1);
+	box-shadow:inset 0 1px 0 rgba(192,98,211,1);
+	background: -ms-linear-gradient(top, #8C04A8, #5A016D); /* IE9 */
+	background: -moz-linear-gradient(top, #8C04A8, #5A016D); /* Firefox */
+	background: -o-linear-gradient(top, #8C04A8, #5A016D); /* Opera 11  */
+	background: -webkit-linear-gradient(top, #8C04A8, #5A016D); /* Chrome 11  */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #8C04A8), color-stop(1, #5A016D)); /* Chrome 10 */
+} 
+
+/* PINK */
+
+.pink-menu.nav  ul li:hover {
+	background-color: #ed96b5;
+	background: -ms-linear-gradient(top, #ed96b5, #ed5e90); /* IE9 */
+	background: -moz-linear-gradient(top, #ed96b5, #ed5e90); /* Firefox */
+	background: -o-linear-gradient(top, #ed96b5, #ed5e90); /* Opera 11  */
+	background: -webkit-linear-gradient(top, #ed96b5, #ed5e90); /* Chrome 11  */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ed96b5), color-stop(1, #ed5e90)); /* Chrome 10, Safari */
+}
+.pink-menu.nav li:hover ul.levels,
+.pink-menu.nav .levels li:hover ul,
+.pink-menu.nav .levels li ul li:hover ul {border-top:4px solid #ed5e90;}
+.pink-menu.nav .inline-search input[type="submit"] {color:#6c0429} 
+.pink-menu.nav li:hover li a:hover {color:#ed5e90;}
+.pink-menu.nav {
+	border:1px solid #6c0429;
+	-moz-box-shadow:inset 0 1px 0 rgba(237,150,181,1);
+	-webkit-box-shadow:inset 0 1px 0 rgba(237,150,181,1);
+	box-shadow:inset 0 1px 0 rgba(237,150,181,1);
+	background: -ms-linear-gradient(top, #c91454, #6c0429); /* IE9 */
+	background: -moz-linear-gradient(top, #c91454, #6c0429); /* Firefox */
+	background: -o-linear-gradient(top, #c91454, #6c0429); /* Opera 11  */
+	background: -webkit-linear-gradient(top, #c91454, #6c0429); /* Chrome 11  */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #c91454), color-stop(1, #6c0429)); /* Chrome 10 */
+} 
+
+/* RED */
+
+.red-menu.nav  ul li:hover {
+	background-color: #c85853;
+	background: -ms-linear-gradient(top, #c85853, #c8433c); /* IE9 */
+	background: -moz-linear-gradient(top, #c85853, #c8433c); /* Firefox */
+	background: -o-linear-gradient(top, #c85853, #c8433c); /* Opera 11  */
+	background: -webkit-linear-gradient(top, #c85853, #c8433c); /* Chrome 11  */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #c85853), color-stop(1, #c8433c)); /* Chrome 10, Safari */
+}
+.red-menu.nav li:hover ul.levels,
+.red-menu.nav .levels li:hover ul,
+.red-menu.nav .levels li ul li:hover ul {border-top:4px solid #c8433c;}
+.red-menu.nav .inline-search input[type="submit"] {color:#480502} 
+.red-menu.nav li:hover li a:hover {color:#c8433c;}
+.red-menu.nav {
+	border:1px solid #480502;
+	-moz-box-shadow:inset 0 1px 0 rgba(200,88,83,1);
+	-webkit-box-shadow:inset 0 1px 0 rgba(200,88,83,1);
+	box-shadow:inset 0 1px 0 rgba(200,88,83,1);
+	background: -ms-linear-gradient(top, #ac231b, #480502); /* IE9 */
+	background: -moz-linear-gradient(top, #ac231b, #480502); /* Firefox */
+	background: -o-linear-gradient(top, #ac231b, #480502); /* Opera 11  */
+	background: -webkit-linear-gradient(top, #ac231b, #480502); /* Chrome 11  */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ac231b), color-stop(1, #480502)); /* Chrome 10 */
+} 
+
+/* LIGHT ORANGE  */
+
+.light-orange-menu.nav  ul li:hover {
+	background-color: #be773e;
+	background: -ms-linear-gradient(top, #be773e, #be6f30); /* IE9 */
+	background: -moz-linear-gradient(top, #be773e, #be6f30); /* Firefox */
+	background: -o-linear-gradient(top, #be773e, #be6f29); /* Opera 11  */
+	background: -webkit-linear-gradient(top, #be773e, #be6f30); /* Chrome 11  */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #be773e), color-stop(1, #be6f30)); /* Chrome 10, Safari */
+}
+.light-orange-menu.nav li:hover ul.levels,
+.light-orange-menu.nav .levels li:hover ul,
+.light-orange-menu.nav .levels li ul li:hover ul {border-top:4px solid #be6f30;}
+.light-orange-menu.nav .inline-search input[type="submit"] {color:#8e4811} 
+.light-orange-menu.nav li:hover li a:hover {color:#be6f30;}
+.light-orange-menu.nav {
+	border:1px solid #8e4811;
+	-moz-box-shadow:inset 0 1px 0 rgba(190,119,62,1);
+	-webkit-box-shadow:inset 0 1px 0 rgba(190,119,62,1);
+	box-shadow:inset 0 1px 0 rgba(190,119,62,1);
+	background: -ms-linear-gradient(top, #ac5c1b, #8e4811); /* IE9 */
+	background: -moz-linear-gradient(top, #ac5c1b, #8e4811); /* Firefox */
+	background: -o-linear-gradient(top, #ac5c1b, #8e4811); /* Opera 11  */
+	background: -webkit-linear-gradient(top, #ac5c1b, #8e4811); /* Chrome 11  */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ac5c1b), color-stop(1, #8e4811)); /* Chrome 10 */
+} 
+
+/* ORANGE  */
+
+.orange-menu.nav  ul li:hover {
+	background-color: #ff933a;
+	background: -ms-linear-gradient(top, #ff933a, #ff8b2a); /* IE9 */
+	background: -moz-linear-gradient(top, #ff933a, #ff8b2a); /* Firefox */
+	background: -o-linear-gradient(top, #ff933a, #ff8b2a); /* Opera 11  */
+	background: -webkit-linear-gradient(top, #ff933a, #ff8b2a); /* Chrome 11  */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ff933a), color-stop(1, #ff8b2a)); /* Chrome 10, Safari */
+}
+.orange-menu.nav li:hover ul.levels,
+.orange-menu.nav .levels li:hover ul,
+.orange-menu.nav .levels li ul li:hover ul {border-top:4px solid #ff8b2a;}
+.orange-menu.nav .inline-search input[type="submit"] {color:#cf650d} 
+.orange-menu.nav li:hover li a:hover {color:#ff8b2a;}
+.orange-menu.nav {
+	border:1px solid #cf650d;
+	-moz-box-shadow:inset 0 1px 0 rgba(255,147,58,1);
+	-webkit-box-shadow:inset 0 1px 0 rgba(255,147,58,1);
+	box-shadow:inset 0 1px 0 rgba(255,147,58,1);
+	background: -ms-linear-gradient(top, #ff8016, #cf650d); /* IE9 */
+	background: -moz-linear-gradient(top, #ff8016, #cf650d); /* Firefox */
+	background: -o-linear-gradient(top, #ff8016, #cf650d); /* Opera 11  */
+	background: -webkit-linear-gradient(top, #ff8016, #cf650d); /* Chrome 11  */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ff8016), color-stop(1, #cf650d)); /* Chrome 10 */
+} 
+
+/* LIME */
+
+.lime-menu.nav  ul li:hover {
+	background-color: #e0e28f;
+	background: -ms-linear-gradient(top, #e0e28f, #dfe26b); /* IE9 */
+	background: -moz-linear-gradient(top, #e0e28f, #dfe26b); /* Firefox */
+	background: -o-linear-gradient(top, #e0e28f, #dfe26b); /* Opera 11  */
+	background: -webkit-linear-gradient(top, #e0e28f, #dfe26b); /* Chrome 11  */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #e0e28f), color-stop(1, #dfe26b)); /* Chrome 10, Safari */
+}
+.lime-menu.nav li:hover ul.levels,
+.lime-menu.nav .levels li:hover ul,
+.lime-menu.nav .levels li ul li:hover ul {border-top:4px solid #dfe26b;}
+.lime-menu.nav .inline-search input[type="submit"] {color:#898c17} 
+.lime-menu.nav li:hover li a:hover {color:#dfe26b;}
+.lime-menu.nav {
+	border:1px solid #898c17;
+	-moz-box-shadow:inset 0 1px 0 rgba(224,226,143,1);
+	-webkit-box-shadow:inset 0 1px 0 rgba(224,226,143,1);
+	box-shadow:inset 0 1px 0 rgba(224,226,143,1);
+	background: -ms-linear-gradient(top, #bcbf34, #898c17); /* IE9 */
+	background: -moz-linear-gradient(top, #bcbf34, #898c17); /* Firefox */
+	background: -o-linear-gradient(top, #bcbf34, #898c17); /* Opera 11  */
+	background: -webkit-linear-gradient(top, #bcbf34, #898c17); /* Chrome 11  */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #bcbf34), color-stop(1, #898c17)); /* Chrome 10 */
+}
+
+
+
+
+

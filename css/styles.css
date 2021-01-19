@@ -1,0 +1,150 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+#cssmenu,
+#cssmenu ul,
+#cssmenu ul li,
+#cssmenu ul li a,
+#cssmenu #menu-button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  line-height: 1;
+  display: block;
+  position: relative;
+  /*alt sekmelerin kutularının boyutu*/
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/*menü rengi*/
+#cssmenu:after,
+#cssmenu > ul:after {
+  content: '.';
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+
+/* menünün rengini yerinin vs. belirler.*/
+#cssmenu {
+  z-index:900;
+  width: 990px;
+  margin-left:-5px;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  background: #0094d4;
+  background: -moz-linear-gradient(top, #00a9f3 0%, #0078ab 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #00a9f3), color-stop(100%, #0078ab));
+  background: -webkit-linear-gradient(top, #00a9f3 0%, #0078ab 100%);
+  background: -o-linear-gradient(top, #00a9f3 0%, #0078ab 100%);
+  background: -ms-linear-gradient(top, #00a9f3 0%, #0078ab 100%);
+  background: linear-gradient(to bottom, #00a9f3 0%, #0078ab 100%);
+}
+
+/*başlıkların yanyana dizilmesi*/
+#cssmenu > ul > li {
+  float: left;
+}
+/*başlık menü kutusunun düzeni*/
+#cssmenu > ul > li > a {
+ /*boyutu*/ padding: 18px 25px 21px 25px;
+  /*başlıkların arasındaki çizgi*/border-right: 1px solid rgba(80, 80, 80, 0.12);
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 700;
+  color: white;
+  
+  /*başlığın harfleri arasındaki boşluk*/letter-spacing: 1px;
+}
+/*başlığa tıklayınca renk değişimi*/
+#cssmenu > ul > li:hover > a,
+#cssmenu > ul > li > a:hover,
+#cssmenu > ul > li.active > a {
+  color: #ffffff;
+  background: #0089c5;
+  background: rgba(0, 0, 0, 0.1);
+}
+/*başlıkla ok arasındaki boşluğu oluşturur.*/
+#cssmenu > ul > li.bas > a {
+  padding-right: 45px;
+}
+/*başlıkların yanındaki oku oluşturur.*/
+#cssmenu > ul > li.bas > a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-top-color: #d3eced;
+  right: 17px;
+  top: 22px;
+}
+
+/*alt sekmelerin düzenlenmesini sağlar.*/
+#cssmenu ul ul {
+  position: absolute;
+  left: -9999px;
+  top: 60px;
+  padding-top: 6px;
+  font-size: 13px;
+  opacity: 0;
+  -webkit-transition: top 0.2s ease, opacity 0.2s ease-in;
+  -moz-transition: top 0.2s ease, opacity 0.2s ease-in;
+  -ms-transition: top 0.2s ease, opacity 0.2s ease-in;
+  -o-transition: top 0.2s ease, opacity 0.2s ease-in;
+  transition: top 0.2s ease, opacity 0.2s ease-in;
+}
+
+
+/*alt sekmelerin görünmesini sağlıyor.*/
+#cssmenu > ul > li:hover > ul {
+  top: 52px;
+  left: 0;
+  opacity: 1;
+}
+#cssmenu ul ul  {
+  padding-top: 6px;
+  padding-left: 0;
+}
+/* alt alt sekmelerin olduğu kutunun okunu oluşturuyor.*/
+#cssmenu ul ul ul {
+  padding-top: 0;
+  padding-left: 6px;
+}
+/*alt alt sekmelerin görünmesi*/
+#cssmenu ul ul > li:hover > ul {
+  left: 180px;
+  top: 0;
+  opacity: 1;
+}
+
+/*alt sekmelerin dizilimi*/
+#cssmenu ul ul li a {
+ /*metne eklenen dekorasyonu belirtir */ text-decoration: none;
+  /*metnin ince veya kalın görünmesini sağlar*/font-weight: 400;
+ /*kutuya dolguluk verir.*/ padding: 11px 25px;
+  width: 180px;
+  color: #777777;
+  background: #ffffff;
+ /*gölgelik ekler*/ box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1), 1px 1px 1px rgba(0, 0, 0, 0.1), -1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+/*alt sekmelere basınca renk değişimi*/
+#cssmenu ul ul li:hover > a,
+#cssmenu ul ul li.active > a {
+  color: #333333;
+}
+
+
+/*alt sekmelerin yanındaki oklar*/
+#cssmenu ul ul li.bas > a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 4px solid transparent;
+  border-left-color: #777777;
+  right: 17px;
+  top: 14px;
+}

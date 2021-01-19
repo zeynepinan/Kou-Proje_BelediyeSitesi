@@ -1,0 +1,189 @@
+
+body{
+	
+	font:12px Arial;
+	color:#666;
+	position:relative;
+	background-color:#F1F1F1;
+	overflow-x:hidden;
+	
+}
+::selection{
+	background-color:#ecf6fa;
+	color:#069;
+}
+.anadiv{
+	width: 1000px;
+	padding: 5px;
+	margin: auto;
+	position: relative;
+	max-height: 1900px;
+	background-color: white;
+	height: 18000px;
+}
+.banner{
+	width:980px;
+	margin:auto;
+	padding:5px;
+	height:100px;
+}
+.menu{
+	width:980px;
+	height:30px;
+	margin:auto;
+	margin-top:2px;
+	border-radius:3px;
+}
+
+.hizlimenubaslik{
+	padding:5px;
+	background-color:#069;
+	
+	color:white;
+	font:15px Century Gothic;
+	font-weight:bold;
+	margin-top:20px;
+	margin-bottom:-2px;
+	width:320px;
+	
+	margin-left:5px;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+}
+.hmi1{
+	padding:4px;
+	font-weight:bold;
+	border:1px dashed #ddd;
+	width:320px;
+	background-color:#ecf6fa;
+	font-weight:bold;
+
+}
+.hmi1:hover{
+	color:#e20d41;
+	background-color:#e2eef4;
+}
+.hmi{
+	color:#666;
+	text-decoration: none;
+}
+.projeler{
+	width:640px;
+	
+	height:270px;
+	margin-top:-430px;
+	margin-right:350px;
+	background-color:#ecf6fa;
+
+}
+.fotobaslik{
+	width:120px;
+	border:1px solid #ddd;
+	padding:10px;
+	position:absolute;
+	top:1400px;
+	left:20px;
+	font-weight:bold;
+	background-color:#069;
+	color:white;
+	 
+}
+.videobaslik{
+	width:120px;
+	border:1px solid #ddd;
+	padding:10px;
+	position:absolute;
+     top:1400px;
+	left:170px;
+	font-weight:bold;
+	background-color:#069;
+	color:white;
+	
+}
+.videobaslik:hover{
+	background-color:#1a9bce;
+	color:white;
+}
+
+.fotobaslik:hover{
+	background-color:#1a9bce;
+	color:white;
+}
+.altmenu1{
+	padding:0;
+	margin:0;
+	border:none;
+	margin-left:35px;
+	float:left;
+	margin-top:35px;
+	width:120px;
+	list-style-type:none;
+}
+.icmenubaslik{
+	padding:3px;
+	border:1px solid #ddd;
+	width:135px;
+	text-align:center;
+	background-color:#069;
+	color:white;
+	font:14px Century Gothic;
+	font-weight: bold;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+.icmenu1{
+	padding:7px;
+	border:1px solid #ddd;
+	width:126px;
+	
+}
+.icmenualt{
+	color:#666;
+}
+.copyright{
+	width:450px;
+	position: absolute;
+	right:0;
+	top:1865px;
+}
+.design{
+	font-weight: bold;
+	color:#069;
+}
+.light{
+	position:relative; 
+	margin-left:10px;
+	}
+.foto{
+	position:relative; 
+	margin-right:365px;
+	 margin-top:50px;
+	}
+	.yazibaslik{
+	padding:5px;
+	border:1px solid #ddd;
+	background-color:#e2eef4;
+	color:#666;
+	width:150px;
+	position:absolute;
+	margin-top:10px;
+}
+.menudevami{
+	width:335px;
+	height:270px;
+	margin-left:3.5px;
+	background-color:white;
+	margin-top:2px;
+}
+
+
+#menulink{
+		padding:3px;
+	margin-top:8px;
+	font-weight:bold;
+	border:1px dashed #ddd;
+    list-style-type:none;
+	margin-left:-10px;
+}
+
+

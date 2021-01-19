@@ -1,0 +1,39 @@
+/* ================ GENERAL STYLES  =============== */	
+
+* {
+	margin:0;
+	padding:0;	
+}
+
+
+body {
+	background:#191818;
+	margin:0;
+	padding:0;
+} 
+
+body#drop,
+body#mega-drop {
+	background:#ccc;
+} 
+
+#container {
+	margin:80px auto;
+	width:600px;
+}
+
+#mega-drop #container {
+	margin:0 auto;
+	width:960px;
+}
+
+#drop #container {
+	width:960px;
+} 
+
+hr {
+	height:1px;
+	width:100%;
+	margin:7em 0;
+	border:none;
+} 
